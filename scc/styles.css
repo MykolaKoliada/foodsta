@@ -1,10 +1,8 @@
 :root {
---main-color: #2C2C2C;
---main-yellow-color: #FFE550;
+  --main-color: #2c2c2c;
+  --main-yellow-color: #ffe550;
 
-
-
-
+  --background-color: #fefefe;
 }
 
 html {
@@ -25,16 +23,6 @@ ul {
   margin: 0;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -52,12 +40,22 @@ a {
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  background: #FEFEFE
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1,5;
+  color: var(--main-color);
+  background: var(--background-color);
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-
-
+a {
+  text-decoration: none;
+}
 
 /* header */
 
@@ -65,11 +63,9 @@ body {
 }
 
 .conteiner {
-
 }
 
 .header-conteiner {
-
 }
 .header-nav {
 }
