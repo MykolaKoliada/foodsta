@@ -15,46 +15,88 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
     <link href="./scc/styles.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
       <div class="header-conteiner conteiner">
-        <a href="./index.html" class="logo-link"
+        <a class="logo-link" href="./index.html"
           ><svg width="66" height="52">
             <use href="./img/svg/icons.svg#icon-logo"></use>
           </svg>
         </a>
         <nav class="header-nav">
           <ul class="header-link">
-            <li><a href="./index.html" class="link curent">Home</a></li>
-            <li><a href="" class="link">About</a></li>
-            <li><a href="" class="link">Service</a></li>
-            <li><a href="" class="link">Menu</a></li>
-            <li><a href="" class="link">Contact</a></li>
+            <li><a class="link curent" href="./index.html">Home</a></li>
+            <li><a class="link" href>About</a></li>
+            <li><a class="link" href>Service</a></li>
+            <li><a class="link" href>Menu</a></li>
+            <li><a class="link" href>Contact</a></li>
           </ul>
         </nav>
-        <button class="button" type="button">Order Now</button>
+        <button class="button" data-modal-open type="button">Order Now</button>
       </div>
     </header>
     <main>
       <!-- hero -->
       <section class="hero">
-        <div class="conteiner">
-          <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
-          <p class="hero-txt">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique. Duis cursus, mi quis
-            viverra ornare, eros dolor interdum nulla, ut commodo diam libero
-            vitae erat.
-          </p>
-          <button class="button" type="button">Order Now</button
-          ><img src="./img/falafel.png" alt="food" width="528" height="528" />
+        <div class="conteiner cont-hero">
+          <div>
+            <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
+            <p class="hero-txt">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique. Duis cursus,
+              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
+              libero vitae erat.
+            </p>
+            <button class="button" data-modal-open type="button">
+              Order Now
+            </button>
+          </div>
+          <div class="slaid">
+            <div class="autoplay slaider">
+              <div>
+                <img
+                  src="./img/slaid1.png"
+                  alt="food"
+                  width="528"
+                  height="528"
+                />
+              </div>
+              <div>
+                <img
+                  src="./img/slaid2.png"
+                  alt="food"
+                  width="528"
+                  height="528"
+                />
+              </div>
+              <div>
+                <img
+                  src="./img/slaid3.png"
+                  alt="food"
+                  width="528"
+                  height="528"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- offerinngs -->
       <section class="offerinngs">
         <div class="conteiner">
+          <img src="./img/apple.png" alt="apple" width="550" height="604" />
           <div class="offerinngs-conteiner">
             <h2 class="offerinng title">What’s Special About Our Offerings</h2>
             <p class="offerinngs-txt">
@@ -66,7 +108,7 @@
             <ul class="offerinngs-list">
               <li class="offerinngs-title">
                 <div class="offerinngs-icon">
-                  <svg class="icon" wigth="32" height="32">
+                  <svg class="icon" width="32" height="32">
                     <use href="./img/svg/icons.svg#icon-rocket"></use>
                   </svg>
                 </div>
@@ -78,7 +120,7 @@
               </li>
               <li class="offerinngs-title">
                 <div class="offerinngs-icon">
-                  <svg class="icon" wigth="32" height="32">
+                  <svg class="icon" width="32" height="32">
                     <use href="./img/svg/icons.svg#icon-touch"></use>
                   </svg>
                 </div>
@@ -89,8 +131,12 @@
                 </p>
               </li>
             </ul>
+            <butoon class="button-wite" data-modal-open type="button"
+              >Order Now</butoon
+            >
           </div>
-          <butoon class="button-wite" type="button">Order Now</butoon>
+
+          <div class="bg-img"></div>
         </div>
       </section>
 
@@ -98,7 +144,9 @@
       <section class="favorite">
         <div class="conteiner">
           <h2 class="favorit title">Some of Our Favorites</h2>
-          <p class="favorite-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="favorite-txt">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
           <ul class="favorites-list">
             <li class="favorites-item">
               <svg class="favorites-ring" width="394" height="397">
@@ -109,6 +157,7 @@
                 alt="gamburger"
                 width="315"
                 height="315"
+                loading="lazy"
               />
             </li>
             <li class="favorites-item">
@@ -120,6 +169,7 @@
                 alt="Pasta"
                 width="315"
                 height="315"
+                loading="lazy"
               />
             </li>
             <li class="favorites-item">
@@ -131,6 +181,7 @@
                 alt="pizza"
                 width="315"
                 height="315"
+                loading="lazy"
               />
             </li>
             <li class="favorites-item">
@@ -142,6 +193,7 @@
                 alt="chicken"
                 width="315"
                 height="315"
+                loading="lazy"
               />
             </li>
             <li class="favorites-item">
@@ -153,6 +205,7 @@
                 alt="salat"
                 width="315"
                 height="315"
+                loading="lazy"
               />
             </li>
             <li class="favorites-item">
@@ -164,6 +217,7 @@
                 alt="borshch"
                 width="315"
                 height="315"
+                loading="lazy"
               />
             </li>
           </ul>
@@ -175,43 +229,33 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <ul>
           <li>
-            <img
-              src="./img/stars.png"
-              alt="stars"
-              width="101px"
-              height="16px"
-            />
+            <img src="./img/stars.png" alt="stars" width="101" height="16" />
             <p>
               “The Best app I have used to order food in a while, so many
               options to choose from too, I would recommend to a freind, No
               questions asked”
             </p>
             <img
-              src="./img/Ellipse 9.png"
+              src="./img/custom-m.png"
               alt="foto men"
-              width="48px"
-              height="48px"
+              width="48"
+              height="48"
             />
             <p>Sumith Shah</p>
             <p>Some Dude</p>
           </li>
           <li>
-            <img
-              src="./img/stars.png"
-              alt="stars"
-              width="101px"
-              height="16px"
-            />
+            <img src="./img/stars.png" alt="stars" width="101" height="16" />
             <p>
               “The ease with which I can just go in and order what i want was
               amazing, It has been a very pleasant experience ordering from this
               app”
             </p>
             <img
-              src="./img/Ellipse 10.png"
+              src="./img/custom-w.png"
               alt="foto women"
-              width="48px"
-              height="48px"
+              width="48"
+              height="48"
             />
             <p>Sumith Shah</p>
             <p>Some Dude</p>
@@ -262,5 +306,68 @@
         </li>
       </ul>
     </footer>
+    <!-- modal-window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" data-modal-close>
+          <svg class="icon-close" width="22" height="22">
+            <use href="./img/svg/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <form class="modal-form">
+          <strong class="modal-title">Order Form</strong>
+
+          <label class="modal-lable" for="text">Name</label>
+          <input
+            class="modal-input"
+            type="text"
+            name="user-name"
+            id="text"
+            placeholder="Your name"
+            minlength="3"
+            required
+          />
+
+          <label class="modal-lable" for="phone">Phone</label>
+          <input
+            class="modal-input"
+            type="text"
+            name="user-phone"
+            id="phone"
+            placeholder="+38(0_ _) _ _ _   _ _   _ _"
+            minlength="12"
+            required
+          />
+
+          <label class="modal-lable" for="email">E-mai</label>
+          <input
+            class="modal-input"
+            type="email"
+            name="user-Email"
+            id="email"
+            minlength="5"
+            placeholder="example@gmail.com"
+            required
+          />
+
+          <button type="submit" class="button-wite modal-btn">Send</button>
+        </form>
+      </div>
+    </div>
+    <!-- slider -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
